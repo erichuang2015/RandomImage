@@ -1,0 +1,17 @@
+<meta charset="UTF-8">
+	<img onload="update()" /><script>
+	function update()
+	{
+		var xmlhttp;
+		if (window.XMLHttpRequest)
+		{
+			xmlhttp=new XMLHttpRequest();
+		}
+		else
+		{
+			xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		xmlhttp.open("GET","getImage.php","true");
+		xmlhttp.send();
+	}
+	</script>
